@@ -119,3 +119,44 @@ html, body{
 .btn-rigth{
     margin-left: 10px;
 }
+
+.list-container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-list-item{
+    box-shadow:
+    0px 0.6px 3.8px rgba(0, 0, 0, 0.013),
+    0px 1.2px 8.7px rgba(0, 0, 0, 0.025),
+    0px 1.9px 15.1px rgba(0, 0, 0, 0.035),
+    0px 2.7px 24px rgba(0, 0, 0, 0.042),
+    0px 3.6px 37.1px rgba(0, 0, 0, 0.048),
+    0px 5px 57.9px rgba(0, 0, 0, 0.054),
+    0px 7px 96.1px rgba(0, 0, 0, 0.065),
+    0px 11px 192px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px ;
+}
+
+.card-list-item h3{
+    color: #7209b7;
+    font-size: 18px;
+}
+
+.address-line{
+    font-size: 14px;
+
+}
+
+.address-cep{
+    color: #7209b7;
+    font-size: 13px;
+}
