@@ -22,24 +22,26 @@
     </header>
 
     <main>
-        <section id="form-section">
-            <div>
+        <section id="form-section" class="form-container">
+            <div class="card-form">
                 <form name=newAddress>
-                    <div>
-                        <label for="cep">CEP:</label>
-                        <input type="text" name="cep" id="cep" placeholder="CEP:">
+                    <div class="form-control">
+                        <label  for="cep">CEP:</label>
+                        <input type="text" name="cep" id="cep" class="form-input" placeholder="CEP:">
+                        <div class="error-message">Campo requerido</div>
                     </div>
-                    <div>
+                    <div class="form-control">
                         <label for="street">Logradouro:</label>
-                        <input type="text" name="street" id="cep" placeholder="Logradouro:">
+                        <input type="text" name="street" id="cep" class="form-input" disabled placeholder="Logradouro:">
                     </div>
-                    <div>
+                    <div class="form-control">
                         <label for="number">Número:</label>
-                        <input type="text" name="cep" id="number" placeholder="Número:">
+                        <input type="text" name="cep" id="number" class="form-input" placeholder="Número:">
+                        <div class="error-message">Campo requerido</div>
                     </div>
-                    <div>
+                    <div class="form-control">
                         <label for="city">Cidade:</label>
-                        <input type="text" name="city" id="cep" placeholder="Cidade:">
+                        <input type="text" name="city" id="cep" class="form-input" disabled placeholder="Cidade:">
                     </div>
 
                     <div>
