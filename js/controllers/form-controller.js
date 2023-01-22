@@ -1,5 +1,6 @@
 import Address from "../modules/address.js";
 import * as addressService from "../services/address-service.js"
+import * as listController from '../controllers/list-controller.js'
 
 
 
@@ -33,16 +34,21 @@ export function init() {
     state.errorNumber = document.querySelector('[data-error="number"]');
 
     state.inputNumber.addEventListener('change', handleInputNumberChange)
+    state.inputNumber.addEventListener('keyup', handleInputNumberKeyup)
     state.inputCep.addEventListener('change', handleInputCepChange)
     state.btnClear.addEventListener('click', handleBtnClearClick)
     state.btnSave.addEventListener('click', handleBtnSaveClick)
 
-    const json =
 
-        console.log()
 
 
 }
+
+function handleInputNumberKeyup(event) {
+    state.address.number = event.target.value;
+}
+
+
 
 
 function clearFrom() {
@@ -71,7 +77,6 @@ async function handleInputCepChange(event) {
         setFormError("cep", "");
         state.inputNumber.focus();
 
-        console.log(address)
 
     } catch (e) {
         setFormError("cep", "Informe um CEP válido!")
@@ -87,7 +92,7 @@ function handleBtnClearClick(event) {
 
 async function handleBtnSaveClick(event) {
     event.preventDefault()
-    console.log(event.target);
+    listController.addCard(state.address)
 }
 
 function handleInputNumberChange(event) {
