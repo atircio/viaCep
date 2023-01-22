@@ -36,6 +36,7 @@ html, body{
 .contact-link {
     color: #fff;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .form-container{
